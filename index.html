@@ -1,46 +1,259 @@
-<html>
-    <head>
-        <!--Written and Directed By James Scott McDowell-->
-        <title>Singularity</title>
-        <link rel="stylesheet" href="css/radlab.css">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="google-site-verification" content="RW6yUQ8Cf6DKRiYOzA0oGeoYUM7dR9RBh7OxPGTnsyc" />
-    </head>
-    <body class="indexPageBody">
-        <div class="indexPageLayoutGrid">
-            <div class="logoGraphic w3-spin"></div>
-            <div class="logoText centerXY noselect"><span>singularity</span></div>
-            <div class="legalesePart1 centerXY noselect" style="font-family:gothamRoundedLight;color:white">By tapping "okay fine" you hitherforth agree with our</div>
-            <div class="legalesePart2 centerXY noselect" style="font-family:gothamRoundedLight;color:white">
-                <div onclick="showModal('genericModal');" style="text-decoration:underline;">Terms of Service</div>&nbsp;and&nbsp;<a href="https://youtu.be/OMOGaugKpzs?t=15">"Privacy" Policy</a>.
-            </div>
-            <div class="okayFine centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>OKAY FINE</span></div>
-            <div class="loginWith centerXY largeRadius noselect" onclick="location.href = 'singularity.html';"><span>LOG IN WITH SOCIAL SECURITY NUMBER</span></div>
-            <div class="explanation centerXY noselect"><span><a href="https://youtu.be/_wWkAHOph6A">Watch the commercial</a></span></div>
-            <div class="confidentiality centerXY noselect" style="font-family:gothamRoundedLight;color:white">(We won't tell anyone you're doing this.)</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Scott McDowell - Resume</title>
+    <style id="theme-stylesheet">
+        /* Mundane.css - The Cloak of Formality */
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #222;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .toggle-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 8px 12px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+            border-radius: 4px;
+        }
+
+        .qualifications-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .qualifications-table td {
+            padding: 8px;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        @media print {
+            .toggle-button {
+                display: none;
+            }
+        }
+
+        /* Whimsical.css - The Cloak of Creativity */
+        body.whimsical {
+            font-family: 'Poppins', 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #4a4a4a;
+            transition: all 0.5s ease;
+        }
+
+        .whimsical .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+        }
+
+        .whimsical h1, .whimsical h2, .whimsical h3 {
+            color: #ff6f61;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 1px;
+        }
+
+        .whimsical .section-title {
+            border-bottom: 3px dashed #ff6f61;
+            color: #d64a4a;
+            text-transform: uppercase;
+        }
+
+        .whimsical li {
+            background: rgba(255, 239, 213, 0.6);
+            border-radius: 5px;
+            padding: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .whimsical li:hover {
+            background: rgba(255, 223, 186, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleTheme()">Switch Style</button>
+    <div class="container">
+        <h1>James Scott McDowell</h1>
+        <div class="contact-info">
+            218 S Arthur Ashe Blvd Apt 3 • Richmond, VA 23220 • mcdowellj87@gmail.com • 919-971-4894<br>
+            <em>Full Remote Worker</em>
         </div>
-        <div id="genericModal" class="genericModal">
-            <div class="termsAndConditionsText smallRadius">Welcome to the nadir of searching for the basic human needs of
-                love, and understanding. Like a Burger King is to your nutritional health; so too is online dating to
-                your romantic happiness. Surely, one may overcome the expenditures of one’s own time,
-                money and mental energy, by, as they say: “putting yourself out there.” But by the gods! Who has time for
-                THAT guff? So let us begin your thumb-sliding journey into the abject HORROR of the personalizes of men on
-                the internet that you will no doubt encounter.
-            </div>
-            <div class="modalExit centerXY" onclick="document.getElementById('genericModal').style.visibility='hidden';">
-                <div class="closeButton">&#10007;</div>
-            </div>
-            <div class="termsTitle">THE TERMS</div>
-        </div>
-    </body>
-    <script src="js/modal.js"></script>
+
+        <section>
+            <h2 class="section-title">General Qualifications</h2>
+            <table class="qualifications-table">
+                <tr>
+                    <td>Trained in Agile development</td>
+                    <td>Effective listener with clear writing and speaking skills</td>
+                </tr>
+                <tr>
+                    <td>Keen eye for design</td>
+                    <td>Strong problem-solving abilities</td>
+                </tr>
+                <tr>
+                    <td>Proficient in automation scripting</td>
+                    <td>Adaptable to new technologies</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="section-title">Application Software</h2>
+            <p><strong>Software Management Tools:</strong> Jira, Git, GitHub, GitLab, Bitbucket<br>
+               <strong>Code Editors:</strong> Apache NetBeans, Visual Studio Code, Visual Studio 2017, Visual Studio 2008<br>
+            </p>
+        </section>
+        <section>
+            <h2 class="section-title">Web Technologies & Programming</h2>
+            <p><strong>Server-side:</strong> Java EE / Jakarta EE, PHP, Python Flask, Classic ASP (used at US Coast Guard)<br>
+               <strong>Client-side:</strong> PrimeFaces, HTML5, JavaScript, jQuery, CSS Grid, Flexbox<br>
+               <strong>Database:</strong> Oracle, PostgreSQL, SQLite, Ingres Database (used at US Coast Guard)<br>
+               <strong>Languages:</strong> Java, PHP, C#, Python, VBScript<br>
+               <strong>Operating Systems:</strong> Windows, Linux (Ubuntu) Servers, macOS</p>
+        </section>
+        <section>
+            <h2 class="section-title">Artificial Intelligence Experience</h2>
+             <p><strong>Cyber Security Awareness certified to use DHSChat (the DHS's ChatGPT) for improved programming efficiency.</strong> (2025)</p>
+             <p><strong>Collaborative Android Automation Project</strong> (2023)<br>
+                Developed a Python-based automation system utilizing Flask servers on 50 Android phones in collaboration with a 3D designer and another developer.<br>
+                Installed Termux and Termux API to enable Linux commands to be run on Android OS, which allowed access to each phone's camera and allowed for the ability to send programmatic photo taking commands.<br>
+                Prototyped the system leveraging Flask, while the second developer improved the efficiency of the parallel network programming involved.<br>
+                The 3D designer created custom 3D-printed phone mounts and designed a PVC-based photo booth for a relatively inexpensive hardware setup.<br>
+                This project was done at first by hand until the team found that ChatGPT could accelerate our efforts significantly.</p>
+        </section>
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+        
+            <p><strong>Senior Software Developer - CompQsoft (US Coast Guard Contractor)</strong> (2021 – Present)<br>
+               Overhauled and rewrote critical queries for the Aircraft Wiring Application, an application that takes inventory of all aircraft wires for the entire Coast Guard;
+               this endeavor followed a server-wide PHP upgrade to PHP 7, ensuring application stability and performance.<br>
+               Contributed major updates to the Automated Access Request PHP web application, streamlining Coast Guard software role requests to many of our web applications and systems.<br>
+               Developed features for the Automated Access Request system to clone user permissions via an email address, which accelerates the efforts of supervisors so they will no longer need to do this repeatedly.<br>
+               Currently automating the display of system downtime notices for Coast Guard applications using Microsoft Power BI.<br>
+               Developed a Jakarta EE (Java EE) and PrimeFaces full stack replacement for the now defunct Engineering Services's Services Request Application.</p>
+        
+            <p><strong>Webmaster II - Eastern Virginia Medical School</strong> (2019 – 2020)<br>
+               Contributed extensively to JavaScript programming for an award-winning series of interactive digital magazines highlighting EVMS's efforts and achievements.<br>
+               Programmed interactive games, dynamic graphics, and animations in collaboration with artists and designers.<br>
+               <a href="https://www.evms.edu/pulse/archive/index.php?filter=.evms-magazine">EVMS Magazine Issues 12-1 and 12-2</a><br>
+               Designed an automation tool to accelerate front-end development time: <a href="https://github.com/mcdowellj87/grid_master">CSS Grid Automation Tool</a>.<br>
+               Learned and used Flexbox CSS formatting techniques in addition to the more mechanical CSS Grids.<br>
+               Expertly studied the XML of SVGs and understood them under the hood for animating and transforming the images with JavaScript for interactive web graphics in our magazines.
+        
+            <p><strong>Lead Developer & Media Architect - <a href="https://www.singularitydating.com">singularitydating.com</a></strong> (Independent Satirical Project | 2019)<br>
+               Engineered the entire web application as a mobile-optimized joke dating site.<br>
+               Developed a custom swipe-based UI to emulate the feeling of Tinder's UI.<br>
+               Created satirical media gags and viral marketing content, achieving widespread media attention: <a href="https://people.com/human-interest/singularity-dating-app-only-one-man-allowed/">people.com</a><br>
+               Collaborated with the project founder to blend technical excellence with our comedic stylings.</p>
+        
+            <p><strong>Software Developer - Intergraph/Hexagon PPM</strong> (2018 – 2019)<br>
+               Contributed to modernizing Smart 3D, a legacy VBScript-based CAD program designed for global shipping industry freighter construction.</p>
+            <p><strong>Full-Stack Web Developer - Rose & Womble Realty</strong> (2016 – 2018)<br>
+               Automated routine tasks with a Python GUI Robot script to generate daily performance reports (high score boards) for realtors.<br>
+               Developed a Python Imaging Library script to extract high-value property images from PDFs provided by the Virginia Pilot newspaper for web-based advertisements.<br>
+               Architected a PHPRets-based PHP script, enabling near real-time updates of property listings from the RETS feed every five minutes.
+               The RETS feed was scheduled by a cron job that ran on an Ubuntu server that served as the backbone to all of Rose & Womble's real estate listings on rwhomes.com.<br>
+               Created responsive property ad webpages with one-touch JavaScript call buttons for mobile users, so that prospective customers could connect with a realtor more efficiently.</p>
+        
+            <p><strong>Software Developer - Enterprise Information Services (US Coast Guard Contractor)</strong> (2012 – 2015)<br>
+               Designed, implemented, and maintained the U.S. Coast Guard’s Aircraft Parts Tracking barcode scanner application using C# .NET Micro Framework.<br>
+               The barcode scanner system tracked all parts for all fixed wing aircraft in the Coast Guard fleet and the application outlived that of the hardware and OS that it was designed for, a testament to the excellent computer science education imparted on me from East Carolina University.<br>
+               Heavily modified the Aircraft Wiring Management web application, improving speed, user interface and reporting capabilities.<br>
+               Maintained numerous in-house web applications written in PHP and Classic ASP. (an old technology at the time that was still in use on base)</p>
+        
+            <p><strong>Full Spectrum Works of Elizabeth City</strong> (2014)<br>
+               Volunteered to prototype and develop an RFID-based door system for Elizabeth City's first Makerspace.<br>
+               Created a system using Python, MySQL, and PHP Flask, utilizing a Raspberry Pi as the central server and Arduino microcontrollers as the client and RFID card reading device.<br>
+               Documentation of the project can be found at <a href="http://fullspectrumworks.weebly.com/learn-do-share">Full Spectrum Works</a>.</p>
+        </section>
+        <br>
+        <section>
+            <h2 class="section-title">Education</h2>
+            <p>Bachelor of Science in Computer Science<br>
+               East Carolina University (May 2012)</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Clubs & Awards</h2>
+            <p>East Carolina University - National Society of Collegiate Scholars, 2008</p>
+            <p>Aviation Logistic Center (US Coast Guard) - Certified Aviation Logistics Center Developer, 2013</p>
+            <p>Aviation Logistic Center (US Coast Guard) - Awarded for outstanding diligence in modernizing and supporting ALC’s barcode system, 2014</p>
+        </section>        
+
+        <section>
+            <h2 class="section-title">Passions</h2>
+            <p>Automation, Artificial Intelligence, Digital Art, Web Development</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">References</h2>
+            <p>Anthony Ruffin, Packaged App Developer, Accenture, anthony.ruffin@accenture.com, 757-450-3114</p>
+            <p>Aaron Smith, Field Service Technician, Novant Medical Group, mesamxr@gmail.com, 336-285-1801</p>
+            <p>Robert Cooper, Business Analyst, US Coast Guard Base Elizabeth City, 757-353-5247</p>
+            <p>Alex Rook, Managing Director, Astrolab Investments, alex.rook@gmail.com, 919-610-1254</p>
+            <p>Robert Edward Starr, Senior Linux Systems Engineer, George Washington University (Biostatistics Center), restar21@gmail.com, 919-356-6231</p>
+        </section>
+    </div>
+
     <script>
-        var osType = getMobileOperatingSystem();
-        if(osType != "iOS" && osType != "Android"){
-            window.location = "mobile_only.html";
+        function toggleTheme() {
+            document.body.classList.toggle('whimsical');
         }
     </script>
+</body>
 </html>
